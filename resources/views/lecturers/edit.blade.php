@@ -1,14 +1,14 @@
-@extends('students.layout')
+@extends('lecturers.layout')
 
 
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit student</h2>
+                <h2>Edit lecturer</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('students.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('lecturers.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -26,8 +26,8 @@
     @endif
 
 
-    {!! Form::model($student, ['method' => 'PATCH','route' => ['students.update', $student->id]]) !!}
-        @include('students.form')
+    {!! Form::model($lecturer, ['method' => 'PATCH','route' => ['lecturers.update', $lecturer->id]]) !!}
+        @include('lecturers.form')
     {!! Form::close() !!}
 
 

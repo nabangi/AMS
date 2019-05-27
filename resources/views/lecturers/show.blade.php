@@ -1,28 +1,30 @@
-@extends('courses.layout')
+@extends('layout')
+
 
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2> Show Course</h2>
+                <h2> Show lecturer</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('courses.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('lecturers.index') }}"> Back</a>
             </div>
         </div>
     </div>
+
 
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Name:</strong>
-                {{ $course->name }}
+                {{ $lecturer->name}}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Details:</strong>
-                {{ $course->detail }}
+                <strong>Faculty:</strong>
+                {{ $lecturer->faculty}}
             </div>
         </div>
     </div>

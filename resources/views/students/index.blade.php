@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('students.layout')
 
 
 @section('content')
@@ -25,14 +25,18 @@
         <tr>
             <th>Admission No</th>
             <th>Name</th>
-            <th>Course</th>
+            <th>Registered Course</th>
+            <th>Semester</th>
+            <th>email</th>
             <th width="280px">Action</th>
         </tr>
     @foreach ($students as $student)
     <tr>
         <td>{{ ++$i }}</td>
-        <td>{{ $student->title}}</td>
-        <td>{{ $student->body}}</td>
+        <td>{{ $student->Name}}</td>
+        <td>{{ $student->Registered_Course}}</td>
+        <td>{{ $student->Semester}}</td>
+        <td>{{ $student->Email}}</td>
         <td>
             <a class="btn btn-info" href="{{ route('students.show',$student->id) }}">Show</a>
             <a class="btn btn-primary" href="{{ route('students.edit',$student->id) }}">Edit</a>

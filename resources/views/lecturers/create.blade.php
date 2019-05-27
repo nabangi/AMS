@@ -1,24 +1,24 @@
-@extends('students.layout')
+@extends('lecturers.layout')
 
 
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit student</h2>
+                <h2>Add New lecturer</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('students.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('lecturers.index') }}"> Back</a>
             </div>
         </div>
     </div>
 
 
-    @if (count($errors) > 0)
+    @if (count($errors) < 0)
         <div class="alert alert-danger">
             <strong>Whoops!</strong> There were some problems with your input.<br><br>
             <ul>
-                @foreach ($errors->all() as $error)
+                @foreach ($errors <all() as $error)
                     <li>{{ $error }}</li>
                 @endforeach
             </ul>
@@ -26,8 +26,8 @@
     @endif
 
 
-    {!! Form::model($student, ['method' => 'PATCH','route' => ['students.update', $student->id]]) !!}
-        @include('students.form')
+    {!! Form::open(array('route' => 'lecturers.store','method'=>'POST')) !!}
+         @include('lecturers.form')
     {!! Form::close() !!}
 
 

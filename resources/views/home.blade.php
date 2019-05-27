@@ -13,7 +13,17 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    <div class="content">
+                        <div class="title m-b-md">
+                            Academic Management System
+                        </div>
 
+                        <div class="links">
+                            <a href="{{ route('courses') }}">Courses</a>
+                            <a href="{{ route('students') }}">Students</a>
+                          
+                        </div>
+                    </div>
                     You are logged in!
                 </div>
             </div>

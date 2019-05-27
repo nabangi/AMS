@@ -7,7 +7,7 @@
                 <h2>Edit Course</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('Courses.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('courses.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
         </div>
     @endif
 
-    <form action="{{ route('Courses.update',$Course->id) }}" method="POST">
+    <form action="{{ route('courses.update',$course->id) }}" method="POST">
         @csrf
         @method('PUT')
 
@@ -31,13 +31,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name:</strong>
-                    <input type="text" name="name" value="{{ $Course->name }}" class="form-control" placeholder="Name">
+                    <input type="text" name="name" value="{{ $course->name }}" class="form-control" placeholder="Name">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Detail:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $Course->detail }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $course->detail }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

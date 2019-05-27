@@ -15,7 +15,7 @@ class CourseController extends Controller
     public function index()
     {
         $courses = course::latest()->paginate(5);
-
+        //echo "<pre>";print_r($courses);die;
         return view('courses.index',compact('courses'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -87,7 +87,7 @@ class CourseController extends Controller
 
         $course->update($request->all());
 
-        return redirect()->route('course.index')
+        return redirect()->route('courses.index')
                         ->with('success','course updated successfully');
     }
 
@@ -101,7 +101,7 @@ class CourseController extends Controller
     {
         $course->delete();
 
-        return redirect()->route('course.index')
+        return redirect()->route('courses.index')
                         ->with('success','course deleted successfully');
     }
 }

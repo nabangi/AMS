@@ -1,13 +1,13 @@
-@extends('courses.layout')
+@extends('semesters.layout')
 
 @section('content')
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2> Show Course</h2>
+                <h2> Show Semester</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('courses.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('semesters.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -16,13 +16,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Name:</strong>
-                {{ $course->name }}
+                {{ $semester->name }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Details:</strong>
-                {{ $course->detail }}
+                {{ $semester->detail }}
             </div>
         </div>
     </div>

@@ -7,8 +7,8 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-            <strong>School:</strong>
-            {!! Form::textarea('body', null, array('placeholder' => 'School','class' => 'form-control','style'=>'height:150px')) !!}
+            <strong>Faculty:</strong>
+            {!! Form::textarea('body', null, array('placeholder' => 'Faculty','class' => 'form-control','style'=>'height:150px')) !!}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
