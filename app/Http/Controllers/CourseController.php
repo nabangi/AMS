@@ -41,6 +41,7 @@ class CourseController extends Controller
         $request->validate([
             'name' => 'required',
             'detail' => 'required',
+            'semester' => 'required'
         ]);
 
         course::create($request->all());
@@ -83,6 +84,7 @@ class CourseController extends Controller
         $request->validate([
             'name' => 'required',
             'detail' => 'required',
+            'semester' => 'required'
         ]);
 
         $course->update($request->all());

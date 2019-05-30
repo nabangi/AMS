@@ -18,8 +18,8 @@ class CreateCoursesTable extends Migration
           $table->string('name');
           $table->text('detail');
           $table->text('semester');
-          $table->enum('published',['yes','no']);
-          $table->string('lecturer_name');
+          // $table->enum('published',['yes','no']);
+          // $table->string('lecturer_name');
           $table->timestamps();
       });
     }
