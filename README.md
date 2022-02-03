@@ -1,12 +1,14 @@
 # AMS
-Academic management System using Laravel 5.8.
+Academic Management System using Laravel 5.8.
 
-This is a simple CRUD implementation of an academic management system for tertiary education but can be replicated for lower levels.
+This is a simple `CRUD` implementation of an academic management system for tertiary education but can be replicated for lower levels.
 
 It comprises of Students and Lecturers as the main actors.
 
-Students:
+**Students:**
+
 Login , Check grades, Apply for academic Leave(email), Check academic progress, Register for courses etc. 
 
-Lecturers:
+**Lecturers:**
+
 Login, View classes assigned, Update attendance, Create and Edit coursework.
