@@ -13,3 +13,7 @@ Login , Check grades, Apply for academic Leave(email), Check academic progress, 
 **Lecturers:**
 
 Login, View classes assigned, Update attendance, Create and Edit coursework.
+
+**Courses:**
+
+Available courses for enrollment
