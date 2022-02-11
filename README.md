@@ -2,7 +2,7 @@
 
 ## Academic Management System using Laravel 6.20.42
 
-This is a simple `CRUD` implementation of an academic management system for tertiary education but can be replicated for lower levels.
+This is a simple `CRUD` implementation of an **Academic Management System** for tertiary education but can be replicated for lower levels.
 
 It comprises of Students and Lecturers as the main actors.
 
